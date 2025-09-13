@@ -1,91 +1,160 @@
-
-
-/* Corps général */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* ===== Global ===== */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
-/* En-tête */
+/* ===== Header ===== */
 header {
-    background: #2B3E4F;
+    background-color: #2B3E4F;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1.5rem 1rem;
     text-align: center;
-    font-size: 1.rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-/* Barre de navigation */
+header.shrink {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+/* ===== Navigation ===== */
 nav {
-    background: #4F657C;
-    padding: 1rem 0;
+    background-color: #4F657C;
+    padding: 0.8rem 0;
 }
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
     list-style: none;
-    padding: 0 20px;
-    justify-content: center; /* Centre le menu */
-    gap: 2rem; /* Ajoute un espace entre chaque lien */
-}
-
-nav ul li {
-    margin: 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
     font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Ajoute un effet survol (jaune doré) */
+    background-color: #4CB050;
+    color: #fff;
 }
 
-/* Section principale */
+/* ===== Main Sections ===== */
 main {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 section {
-    margin-bottom: 2rem;
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
-/* Pied de page */
-footer {
-    background: #2B3E4F;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+section h2 {
     position: sticky;
-    bottom: 0;
+    top: 60px; /* Header réduit + margin */
+    background-color: #f4f4f4;
+    padding: 0.3rem 0.5rem;
+    z-index: 500;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #2B3E4F;
+    color: #fff;
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: -150px; /* caché par défaut */
+    left: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 1000;
+}
+
+footer.show {
+    bottom: 0;
+}
+
+footer input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+footer label {
+    font-size: 0.9rem;
 }
 
 footer button {
-    background: #3A526A;
+    background-color: #4CB050;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
     cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
+    transition: transform 0.2s ease;
+}
+
+footer button:hover:not(:disabled) {
+    transform: scale(1.05);
 }
 
 footer button:disabled {
-    background: #ccc;
+    background-color: #aaa;
     cursor: not-allowed;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    section {
+        padding: 0.8rem;
+    }
+    header {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.6rem;
+    }
+    section h2 {
+        font-size: 1rem;
+    }
+    footer button {
+        width: 90%;
+    }
 }
