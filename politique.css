@@ -1,0 +1,91 @@
+
+
+/* Corps général */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background: #2B3E4F;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.rem;
+}
+
+/* Barre de navigation */
+nav {
+    background: #4F657C;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 20px;
+    justify-content: center; /* Centre le menu */
+    gap: 2rem; /* Ajoute un espace entre chaque lien */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Ajoute un effet survol (jaune doré) */
+}
+
+/* Section principale */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Pied de page */
+footer {
+    background: #2B3E4F;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer button {
+    background: #3A526A;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

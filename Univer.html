@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merci - SHOPNET</title>
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-d0Yr8POGmF5tFhVpYx5d9N+9HTZ8bK/yhXfYx0V4g9qQY+1+H6pH5UnZJZL4w3rT/hzFmsZr6XpO/fGlx7f3jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+/* Corps général */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #202A36, #4CB050);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+/* Message principal */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    animation: fadeIn 2s ease forwards;
+}
+
+/* Icônes marketplace */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    animation: fadeIn 2.5s ease forwards;
+}
+
+.icons i {
+    font-size: 4rem;
+    transition: transform 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    transform: scale(1.3);
+    color: #ffd700;
+}
+
+/* Bouton Google Play Store */
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    background: #3DDC84; /* couleur Google Play vert */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.download-link:hover {
+    transform: scale(1.05);
+    background: #35b274;
+}
+
+/* Date de mise à jour */
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.9rem;
+    color: #ddd;
+    animation: fadeIn 3s ease forwards;
+}
+
+/* Animation fadeIn */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<h1>Merci !</h1>
+<p>Votre inscription est réussie et vous faites maintenant partie de l'univers SHOPNET. Nous sommes ravis de vous accueillir parmi nos utilisateurs.</p>
+
+<div class="icons">
+    <i class="fa-brands fa-amazon" title="Amazon"></i>
+    <i class="fa-brands fa-ebay" title="eBay"></i>
+    <i class="fa-brands fa-etsy" title="Etsy"></i>
+    <i class="fa-brands fa-shopify" title="Shopify"></i>
+    <i class="fa-solid fa-cart-shopping" title="Marketplace"></i>
+</div>
+
+<!-- Lien Google Play Store -->
+<a href="https://play.google.com/store/apps/details?id=com.example.shopnet" target="_blank" class="download-link">
+    <i class="fa-brands fa-google-play"></i> Télécharger l'application
+</a>
+
+<!-- Date de mise à jour -->
+<footer>Mis à jour le 13 septembre 2025</footer>
+
+</body>
+</html>
