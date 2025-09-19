@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopnet - L'avenir du commerce</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", sans-serif; background: #f5f5f5; color: #202A36; overflow-x: hidden; }
+
+    /* Header */
+    header {
+      height: 100vh;
+      background: linear-gradient(135deg, #4CB050, #2d7030);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: slideDown 1.5s ease;
+    }
+
+    header p {
+      margin: 20px 0;
+      font-size: 1.3rem;
+      animation: fadeIn 2s ease;
+    }
+
+    header a.btn {
+      background: white;
+      color: #4CB050;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      animation: bounce 2s infinite;
+    }
+
+    header a.btn:hover {
+      background: #202A36;
+      color: white;
+    }
+
+    /* Shapes animées */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      animation: move 15s linear infinite;
+    }
+    .circle.small { width: 80px; height: 80px; bottom: 20%; left: 10%; }
+    .circle.medium { width: 150px; height: 150px; top: 15%; right: 15%; }
+    .circle.large { width: 250px; height: 250px; bottom: -10%; right: 30%; }
+
+    /* Sections */
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    .title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; color: #4CB050; }
+
+    /* Avantages */
+    .advantages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .adv-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.5s;
+    }
+    .adv-card:hover { transform: translateY(-10px) scale(1.05); }
+    .adv-card i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #4CB050;
+    }
+    .adv-card h3 { margin-bottom: 15px; }
+
+    /* Galerie */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.4s;
+    }
+    .gallery img:hover { transform: scale(1.1); }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+    .contact p { margin-bottom: 20px; }
+    .contact a {
+      margin: 0 10px;
+      color: #4CB050;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+    .contact a:hover { color: #202A36; }
+
+    /* Footer */
+    footer {
+      background: #202A36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #4CB050;
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* Animations */
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes move {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-100vh) rotate(360deg); }
+    }
+
+    @media(max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      header p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Bienvenue sur Shopnet</h1>
+    <p>La plateforme qui connecte vendeurs et acheteurs pour un commerce plus intelligent.</p>
+    <a href="presentation.html" class="btn">Politique de confidentialité</a>
+    <!-- Cercles décoratifs -->
+    <div class="circle small"></div>
+    <div class="circle medium"></div>
+    <div class="circle large"></div>
+  </header>
+
+  <!-- Avantages -->
+  <section id="avantages">
+    <h2 class="title">Les avantages de Shopnet</h2>
+    <div class="advantages">
+      <div class="adv-card">
+        <i class="fa-solid fa-store"></i>
+        <h3>Pour les Vendeurs</h3>
+        <p>Gérez facilement votre boutique en ligne, suivez vos ventes et accédez à des outils de croissance.</p>
+      </div>
+      <div class="adv-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Pour les Acheteurs</h3>
+        <p>Profitez d’un large choix de produits, d’un paiement sécurisé et d’une expérience fluide.</p>
+      </div>
+      <div class="adv-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Performance</h3>
+        <p>Suivez vos statistiques en temps réel et optimisez vos ventes grâce à nos analyses avancées.</p>
+      </div>
+      <div class="adv-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Support 24/7</h3>
+        <p>Notre équipe est toujours là pour vous accompagner dans votre succès.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie -->
+  <section id="galerie">
+    <h2 class="title">Galerie Shopnet</h2>
+    <div class="gallery">
+      <!-- Exemples d’images externes -->
+      <img src="SHOPNET.jpg" alt="Shopnet image">
+      <img src="SHOPIA.jpg" alt="Shopnet image">
+      <!-- Exemple image interne (à remplacer par vos propres images locales) -->
+      <img src="SHOPNETAPK.jpg" alt="Shopnet interne">
+      <img src="SHOOOOOOOOP.jpg" alt="Shopnet interne">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="title">Contactez-nous</h2>
+    <div class="contact">
+      <p>Suivez Shopnet sur nos réseaux sociaux :</p>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shopnet - Tous droits réservés | <a href="presentation.html">Politique de confidentialité</a></p>
+  </footer>
+
+</body>
+</html>
