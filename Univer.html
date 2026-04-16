@@ -4,10 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHOPNET - Créez votre boutique en ligne</title>
-
+<title>SHOPNET - Écosystème digital pour vendre, acheter et grandir</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
 <style>
 * {
     margin: 0;
@@ -16,28 +14,33 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-    color: #fff;
-    line-height: 1.6;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(145deg, #f9fafb 0%, #ffffff 100%);
+    color: #1e293b;
+    line-height: 1.5;
 }
 
-/* Navigation */
-.navbar {
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    max-width: 1400px;
-    margin: auto;
+    padding: 20px 0;
+    border-bottom: 2px solid #e2e8f0;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .logo {
     font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #facc15, #22c55e);
+    font-weight: 800;
+    background: linear-gradient(135deg, #16a34a, #eab308);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -47,64 +50,41 @@ body {
     background: none;
     -webkit-background-clip: unset;
     background-clip: unset;
-    color: #facc15;
-    margin-right: 8px;
+    color: #16a34a;
+    margin-right: 6px;
 }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: #e2e8f0;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: 500;
-}
-
-.nav-links a:hover {
-    color: #facc15;
-}
-
-.btn-nav {
-    background: linear-gradient(135deg, #facc15, #eab308);
-    color: #000;
-    padding: 0.6rem 1.5rem;
-    border-radius: 50px;
+.btn-download {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 40px;
     font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.btn-nav:hover {
-    color: #000;
-    transform: translateY(-2px);
+.btn-download:hover {
+    background: #15803d;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
-    padding: 4rem 2rem 6rem;
-    max-width: 900px;
-    margin: auto;
-}
-
-.hero-badge {
-    background: rgba(250, 204, 21, 0.15);
-    border: 1px solid rgba(250, 204, 21, 0.3);
-    padding: 0.5rem 1.2rem;
-    border-radius: 50px;
-    display: inline-block;
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #facc15;
+    padding: 60px 0 40px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.2;
-    background: linear-gradient(135deg, #fff, #cbd5e1);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #1e293b, #16a34a);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -112,437 +92,371 @@ body {
 
 .hero p {
     font-size: 1.2rem;
-    color: #94a3b8;
-    margin-bottom: 2rem;
+    color: #475569;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Section générique */
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.section-sub {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 48px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, #facc15, #eab308);
-    color: #000;
-    padding: 1rem 2.5rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.1rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s;
-    box-shadow: 0 8px 25px rgba(250, 204, 21, 0.3);
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(250, 204, 21, 0.4);
-}
-
-.btn-outline {
-    background: transparent;
-    border: 2px solid #facc15;
-    color: #facc15;
-    padding: 0.9rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s;
-}
-
-.btn-outline:hover {
-    background: #facc15;
-    color: #000;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Sections */
-.section {
-    padding: 5rem 5%;
-    max-width: 1400px;
-    margin: auto;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #94a3b8;
-    margin-bottom: 3rem;
-    font-size: 1.1rem;
-}
-
-/* Cartes */
-.cards-grid {
+/* Grille cartes (sans ombre, seulement bordures) */
+.grid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
 }
 
 .card {
-    background: rgba(30, 41, 59, 0.6);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(250, 204, 21, 0.2);
+    background: white;
+    border: 1px solid #e2e8f0;
     border-radius: 24px;
-    padding: 2rem;
-    transition: all 0.3s;
-    text-align: center;
+    padding: 28px;
+    transition: transform 0.2s ease, border-color 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(250, 204, 21, 0.5);
-    background: rgba(30, 41, 59, 0.8);
+    transform: translateY(-4px);
+    border-color: #16a34a;
 }
 
 .card-icon {
-    font-size: 3rem;
-    color: #facc15;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #16a34a;
+    margin-bottom: 20px;
 }
 
 .card h3 {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
+    font-weight: 700;
 }
 
-.card p {
-    color: #94a3b8;
-    margin-bottom: 1.5rem;
-}
-
-.card-link {
-    color: #facc15;
-    text-decoration: none;
+.card h4 {
+    font-size: 1.1rem;
     font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    margin: 20px 0 8px;
+    color: #0f172a;
 }
 
-.card-link:hover {
-    gap: 12px;
+.card ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-/* Stats */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    text-align: center;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    border-radius: 32px;
-    padding: 3rem;
-    margin-top: 2rem;
-}
-
-.stat-number {
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #facc15;
-    margin-bottom: 0.5rem;
-}
-
-.stat-label {
-    color: #94a3b8;
-}
-
-/* CTA Section */
-.cta-section {
-    background: linear-gradient(135deg, #facc15, #eab308);
-    border-radius: 32px;
-    padding: 3rem;
-    text-align: center;
-    color: #000;
-    margin-top: 3rem;
-}
-
-.cta-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.cta-section p {
-    color: #422006;
-    margin-bottom: 2rem;
-}
-
-.btn-dark {
-    background: #000;
-    color: #facc15;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    display: inline-flex;
+.card li {
+    margin-bottom: 10px;
+    display: flex;
     align-items: center;
     gap: 10px;
-    transition: all 0.3s;
 }
 
-.btn-dark:hover {
-    transform: scale(1.05);
-    background: #1a1a1a;
+.card li i {
+    color: #16a34a;
+    width: 20px;
+    font-size: 0.9rem;
+}
+
+.resultat {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 2px solid #facc15;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* Section globale */
+.global-vision {
+    background: #f8fafc;
+    border-radius: 32px;
+    padding: 40px;
+    margin: 40px 0;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.global-vision h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.global-vision p {
+    font-size: 1.1rem;
+    color: #334155;
+}
+
+.positionnement {
+    background: linear-gradient(120deg, #fef9e3, #ffffff);
+    border-left: 6px solid #eab308;
+    padding: 32px;
+    border-radius: 24px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.positionnement p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* CTA final */
+.cta-final {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta-final h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.btn-large {
+    background: #16a34a;
+    color: white;
+    padding: 16px 40px;
+    font-size: 1.2rem;
+    border-radius: 60px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    transition: background 0.2s;
+    border: none;
+}
+
+.btn-large:hover {
+    background: #15803d;
 }
 
 /* Footer */
 .footer {
-    background: #0f172a;
-    padding: 3rem 5% 2rem;
-    margin-top: 4rem;
-    border-top: 1px solid #1e293b;
-}
-
-.footer-content {
-    max-width: 1400px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
-.footer-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.footer-logo i {
-    color: #facc15;
-}
-
-.footer h4 {
-    margin-bottom: 1rem;
-    color: #facc15;
-}
-
-.footer a {
-    color: #94a3b8;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 0.5rem;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #facc15;
-}
-
-.footer-bottom {
     text-align: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: 1px solid #1e293b;
+    padding: 40px 0 24px;
+    border-top: 1px solid #e2e8f0;
     color: #64748b;
+    font-size: 0.9rem;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-    
-    .section-title {
-        font-size: 1.8rem;
-    }
-    
-    .stats-grid {
-        padding: 2rem;
-    }
-    
-    .stat-number {
-        font-size: 2rem;
-    }
-    
-    .cta-section {
-        padding: 2rem;
-    }
-    
-    .cta-section h2 {
-        font-size: 1.5rem;
-    }
+    .hero h1 { font-size: 2rem; }
+    .section-title { font-size: 1.6rem; }
+    .card { padding: 20px; }
+    .global-vision { padding: 24px; }
 }
 </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-    <div class="logo">
-        <i class="fas fa-store"></i> SHOPNET
-    </div>
-    <div class="nav-links">
-        <a href="#accueil">Accueil</a>
-        <a href="#boutique">Créer boutique</a>
-        <a href="#analyse">Analyser</a>
-        <a href="#temoignages">Témoignages</a>
-        <a href="#contact">Contact</a>
-    </div>
-    <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn-nav">
-        <i class="fab fa-android"></i> Télécharger
-    </a>
-</nav>
-
-<!-- Hero Section -->
-<section class="hero" id="accueil">
-    <div class="hero-badge">
-        <i class="fas fa-chart-line"></i> +45% de revenus pour nos vendeurs
-    </div>
-    <h1>Créez votre boutique <br>en ligne et <span style="color:#facc15">développez votre business</span></h1>
-    <p>SHOPNET vous donne les outils pour vendre plus, analyser vos performances et atteindre des milliers de clients.</p>
-    <div class="hero-buttons">
-        <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn-primary">
-            <i class="fas fa-rocket"></i> Créer ma boutique
-        </a>
-        <a href="#analyse" class="btn-outline">
-            <i class="fas fa-chart-simple"></i> Analyser mon business
-        </a>
-    </div>
-</section>
-
-<!-- Section : Créer votre boutique -->
-<section class="section" id="boutique">
-    <h2 class="section-title">📦 Créez votre boutique <span style="color:#facc15">en quelques minutes</span></h2>
-    <p class="section-subtitle">Tous les outils pour lancer, gérer et développer votre activité en ligne</p>
-    
-    <div class="cards-grid">
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
-            <h3>Publiez en un clic</h3>
-            <p>Ajoutez vos produits rapidement avec photos, prix et description depuis votre téléphone.</p>
-            <a href="#" class="card-link">Commencer <i class="fas fa-arrow-right"></i></a>
+<div class="container">
+    <!-- Header sans boutons de navigation -->
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-store"></i> SHOPNET
         </div>
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-palette"></i></div>
-            <h3>Personnalisez votre boutique</h3>
-            <p>Créez une identité unique : logo, couleurs, bannière. Votre marque, votre style.</p>
-            <a href="#" class="card-link">Personnaliser <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-tags"></i></div>
-            <h3>Gestion des stocks</h3>
-            <p>Suivez vos ventes, commandes et stocks en temps réel depuis une interface simple.</p>
-            <a href="#" class="card-link">Gérer <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-
-<!-- Section : Analyser votre business -->
-<section class="section" id="analyse">
-    <h2 class="section-title">📊 Analysez vos performances <span style="color:#facc15">comme un pro</span></h2>
-    <p class="section-subtitle">Des statistiques avancées pour comprendre et optimiser votre activité</p>
-    
-    <div class="cards-grid">
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Tableau de bord intelligent</h3>
-            <p>Visualisez vos ventes, revenus et tendances avec des graphiques interactifs.</p>
-            <a href="#" class="card-link">Explorer <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-users"></i></div>
-            <h3>Analyse clientèle</h3>
-            <p>Connaissez vos clients, leur localisation et leurs habitudes d'achat.</p>
-            <a href="#" class="card-link">Analyser <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="card">
-            <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
-            <h3>Marketing intelligent</h3>
-            <p>Recommandations IA pour booster vos ventes et atteindre plus de clients.</p>
-            <a href="#" class="card-link">Découvrir <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-
-<!-- Section : Statistiques -->
-<section class="section">
-    <div class="stats-grid">
-        <div>
-            <div class="stat-number">10K+</div>
-            <div class="stat-label">Vendeurs actifs</div>
-        </div>
-        <div>
-            <div class="stat-number">50K+</div>
-            <div class="stat-label">Produits vendus</div>
-        </div>
-        <div>
-            <div class="stat-number">98%</div>
-            <div class="stat-label">Clients satisfaits</div>
-        </div>
-        <div>
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support dédié</div>
-        </div>
-    </div>
-</section>
-
-<!-- Section : Pourquoi SHOPNET -->
-<section class="section">
-    <div class="cta-section">
-        <h2>🚀 Pourquoi des milliers de vendeurs choisissent SHOPNET</h2>
-        <p>Rejoignez la communauté et transformez votre passion en revenus</p>
-        <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn-dark">
+        <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn-download">
             <i class="fab fa-android"></i> Installer l'application
         </a>
     </div>
-</section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="footer-content">
-        <div>
-            <div class="footer-logo">
-                <i class="fas fa-store"></i> SHOPNET
+    <!-- Hero -->
+    <div class="hero">
+        <h1>🚀 Créez des opportunités <br>et générez des revenus</h1>
+        <p>SHOPNET connecte vendeurs, acheteurs, prestataires et entreprises dans un seul écosystème digital.</p>
+    </div>
+
+    <!-- Section Vendeurs -->
+    <div class="section">
+        <h2 class="section-title">🛍️ Pour les vendeurs</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Avantages</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Vendre sans boutique physique</li>
+                    <li><i class="fas fa-check-circle"></i> Atteindre des clients partout (local & national)</li>
+                    <li><i class="fas fa-check-circle"></i> Augmenter la visibilité de leurs produits</li>
+                    <li><i class="fas fa-check-circle"></i> Développer leur business rapidement</li>
+                </ul>
             </div>
-            <p style="color:#94a3b8; margin-top:0.5rem;">Vendez mieux, plus vite et partout</p>
-        </div>
-        <div>
-            <h4>Produit</h4>
-            <a href="#">Créer une boutique</a>
-            <a href="#">Analyser</a>
-            <a href="#">Tarifs</a>
-        </div>
-        <div>
-            <h4>Support</h4>
-            <a href="#">Aide</a>
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-        </div>
-        <div>
-            <h4>Légal</h4>
-            <a href="#">Conditions</a>
-            <a href="#">Confidentialité</a>
-            <a href="#">Mentions légales</a>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Solutions</h3>
+                <ul>
+                    <li><i class="fas fa-mobile-alt"></i> Publication simple et rapide des produits 📱</li>
+                    <li><i class="fas fa-rocket"></i> Boost pour apparaître en priorité 🚀</li>
+                    <li><i class="fas fa-store"></i> Création de boutique professionnelle 🏪</li>
+                    <li><i class="fas fa-truck"></i> Gestion des commandes simplifiée</li>
+                </ul>
+                <div class="resultat">👉 Résultat : Plus de visibilité → Plus de clients → Plus de revenus</div>
+            </div>
         </div>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 SHOPNET - Tous droits réservés</p>
+
+    <!-- Section Acheteurs -->
+    <div class="section">
+        <h2 class="section-title">👥 Pour les acheteurs</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-shopping-bag"></i></div>
+                <h3>Avantages</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Trouver facilement des produits variés</li>
+                    <li><i class="fas fa-check-circle"></i> Comparer les prix rapidement</li>
+                    <li><i class="fas fa-check-circle"></i> Accéder à des vendeurs fiables</li>
+                    <li><i class="fas fa-check-circle"></i> Gagner du temps dans leurs recherches</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-search"></i></div>
+                <h3>Solutions</h3>
+                <ul>
+                    <li><i class="fas fa-search"></i> Recherche rapide et intuitive 🔍</li>
+                    <li><i class="fas fa-store-alt"></i> Accès à plusieurs vendeurs en un seul endroit</li>
+                    <li><i class="fas fa-comment-dots"></i> Communication directe avec les vendeurs 💬</li>
+                    <li><i class="fas fa-bolt"></i> Expérience simple et fluide</li>
+                </ul>
+                <div class="resultat">👉 Résultat : Moins de stress → Plus de choix → Meilleures décisions</div>
+            </div>
+        </div>
     </div>
-</footer>
+
+    <!-- Section Prestataires de services -->
+    <div class="section">
+        <h2 class="section-title">🛠️ Pour les prestataires de services</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>Avantages</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Trouver des clients facilement</li>
+                    <li><i class="fas fa-check-circle"></i> Augmenter leur visibilité</li>
+                    <li><i class="fas fa-check-circle"></i> Développer leur activité</li>
+                    <li><i class="fas fa-check-circle"></i> Créer une présence professionnelle</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Solutions</h3>
+                <ul>
+                    <li><i class="fas fa-file-alt"></i> Publication de services</li>
+                    <li><i class="fas fa-chart-line"></i> Mise en avant via la plateforme</li>
+                    <li><i class="fas fa-users"></i> Accès direct aux clients intéressés</li>
+                    <li><i class="fas fa-chart-simple"></i> Opportunités de croissance</li>
+                </ul>
+                <div class="resultat">👉 Résultat : Plus de missions → Plus de revenus → Plus de stabilité</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Entreprises -->
+    <div class="section">
+        <h2 class="section-title">🏢 Pour les entreprises</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-building"></i></div>
+                <h3>Avantages</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Digitaliser leurs activités</li>
+                    <li><i class="fas fa-check-circle"></i> Toucher un public plus large</li>
+                    <li><i class="fas fa-check-circle"></i> Renforcer leur image professionnelle</li>
+                    <li><i class="fas fa-check-circle"></i> Accélérer leur croissance</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-crown"></i></div>
+                <h3>Solutions</h3>
+                <ul>
+                    <li><i class="fas fa-store"></i> Boutique professionnelle Premium</li>
+                    <li><i class="fas fa-chart-line"></i> Visibilité accrue sur la plateforme</li>
+                    <li><i class="fas fa-bullhorn"></i> Outils de promotion (Boost)</li>
+                    <li><i class="fas fa-users"></i> Accès à une audience active</li>
+                </ul>
+                <div class="resultat">👉 Résultat : Croissance rapide + positionnement fort sur le marché</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Particuliers -->
+    <div class="section">
+        <h2 class="section-title">👤 Pour les particuliers</h2>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-user-plus"></i></div>
+                <h3>Avantages</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Générer des revenus facilement</li>
+                    <li><i class="fas fa-check-circle"></i> Vendre des produits sans expérience</li>
+                    <li><i class="fas fa-check-circle"></i> Lancer une activité rapidement</li>
+                    <li><i class="fas fa-check-circle"></i> Tester une idée de business</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-play-circle"></i></div>
+                <h3>Solutions</h3>
+                <ul>
+                    <li><i class="fas fa-pen-alt"></i> Inscription simple</li>
+                    <li><i class="fas fa-cloud-upload-alt"></i> Publication rapide</li>
+                    <li><i class="fas fa-comments"></i> Accès direct aux acheteurs</li>
+                    <li><i class="fas fa-brain"></i> Aucun besoin de structure complexe</li>
+                </ul>
+                <div class="resultat">👉 Résultat : Opportunité → Action → Revenus</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Valeur globale et positionnement -->
+    <div class="global-vision">
+        <h3>🌍 La valeur globale de SHOPNET</h3>
+        <p>SHOPNET crée un écosystème complet :</p>
+        <p style="margin-top: 16px;">
+            🛍️ Les vendeurs vendent &nbsp;&nbsp;|&nbsp;&nbsp; 
+            👥 Les acheteurs trouvent &nbsp;&nbsp;|&nbsp;&nbsp; 
+            🛠️ Les prestataires travaillent
+        </p>
+        <p style="font-weight: 600; margin-top: 16px;">➡️ Tout en un seul endroit</p>
+    </div>
+
+    <div class="positionnement">
+        <p>💣 <strong>POSITIONNEMENT FORT</strong></p>
+        <p style="margin-top: 12px;">👉 SHOPNET n’est pas juste une application.<br>
+        👉 C’est une <strong>solution digitale pour gagner de l’argent et développer une activité</strong>.</p>
+    </div>
+
+    <!-- Résumé puissant -->
+    <div class="cta-final">
+        <h2>🔥 SHOPNET permet à chacun de vendre,<br> acheter ou proposer ses services facilement</h2>
+        <p style="color: #475569; margin: 20px 0;">Créez des opportunités réelles de revenus, dès maintenant.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn-large">
+            <i class="fab fa-google-play"></i> Installer l'application
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 - 2026 SHOPNET – Écosystème digital pour entrepreneurs, vendeurs et acheteurs.</p>
+    </div>
+</div>
 
 </body>
 </html>
