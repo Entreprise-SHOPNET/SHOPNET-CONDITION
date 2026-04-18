@@ -5,19 +5,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHOPNET - Vendez et trouvez des clients</title>
+<title>SHOPNET - Achetez, vendez et gagnez de l’argent</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:Inter;background:#fff;color:#0f172a}
-.container{padding:16px}
-h1{font-size:1.8rem;margin-bottom:10px}
-p{color:#475569}
-.btn{display:block;text-align:center;padding:14px;border-radius:30px;text-decoration:none;font-weight:600;margin-top:10px}
+body{margin:0;font-family:Inter;background:#ffffff;color:#0f172a}
+.container{padding:18px;max-width:900px;margin:auto}
+
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:10px}
+h2{font-size:1.4rem;margin-top:28px}
+p{color:#475569;line-height:1.5}
+
+.badge{
+background:#ecfdf5;
+color:#166534;
+padding:10px 14px;
+border-radius:12px;
+font-weight:600;
+font-size:0.9rem;
+display:inline-block;
+margin:10px 0 20px 0;
+}
+
+.btn{
+display:block;
+text-align:center;
+padding:14px;
+border-radius:30px;
+text-decoration:none;
+font-weight:700;
+margin-top:12px;
+font-size:1rem;
+}
 .primary{background:#16a34a;color:#fff}
 .secondary{border:2px solid #16a34a;color:#16a34a}
-.section{margin:30px 0}
-.card{border:1px solid #e2e8f0;border-radius:18px;padding:16px;margin-bottom:12px}
-.badge{font-size:0.8rem;color:#16a34a;font-weight:600}
+
+.card{
+border:1px solid #e2e8f0;
+border-radius:16px;
+padding:14px;
+margin-top:12px;
+background:#fff
+}
+
+.section{margin-top:30px}
+
+ul{padding-left:18px;color:#334155}
+li{margin-bottom:8px}
+
+.hero{text-align:center;padding-top:10px}
+
+.footer{
+margin-top:40px;
+text-align:center;
+font-size:0.85rem;
+color:#64748b;
+padding:20px 0;
+border-top:1px solid #e2e8f0;
+}
+
+.cta-box{
+background:#f0fdf4;
+border:1px solid #bbf7d0;
+border-radius:18px;
+padding:18px;
+text-align:center;
+margin-top:30px;
+}
+
 </style>
 </head>
 <body>
@@ -25,52 +79,94 @@ p{color:#475569}
 <div class="container">
 
 <!-- HERO -->
-<h1>Vendez rapidement. Trouvez des clients près de vous.</h1>
-<p>Publiez vos produits ou services et commencez à gagner de l'argent dès aujourd’hui avec SHOPNET.</p>
+<div class="hero">
+<h1>Vendez, achetez et développez votre activité avec SHOPNET</h1>
 
-<div class="badge">+1500 utilisateurs • Lubumbashi • Actif chaque jour</div>
+<p class="badge">
+Des milliers d’utilisateurs en Afrique, dont la RDC • Achetez, vendez et gagnez de l’argent
+</p>
 
-<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn primary">📲 Installer maintenant</a>
-<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn secondary">💰 Commencer à vendre</a>
+<p>
+SHOPNET est une plateforme moderne qui connecte vendeurs, prestataires et clients dans un seul écosystème simple, rapide et sécurisé.
+</p>
 
-<!-- POURQUOI -->
-<div class="section">
-<h2>Pourquoi choisir SHOPNET ?</h2>
-<div class="card">Publiez un produit en moins de 1 minute</div>
-<div class="card">Trouvez des clients proches de vous</div>
-<div class="card">Discutez directement via WhatsApp</div>
-<div class="card">Boostez vos produits pour vendre plus</div>
+<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn primary">📲 Installer l’application</a>
+<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn secondary">🚀 Commencer maintenant</a>
 </div>
 
-<!-- VENDEUR -->
+<!-- BENEFICES -->
+<div class="section">
+<h2>Pourquoi SHOPNET ?</h2>
+
+<div class="card">✔ Publiez vos produits en quelques secondes</div>
+<div class="card">✔ Trouvez des clients près de vous</div>
+<div class="card">✔ Vendez plus rapidement et simplement</div>
+<div class="card">✔ Boostez vos produits pour plus de visibilité</div>
+</div>
+
+<!-- VENDEURS -->
 <div class="section">
 <h2>Pour les vendeurs</h2>
-<div class="card">Gérez vos produits facilement</div>
-<div class="card">Suivez vos performances</div>
-<div class="card">Créez votre boutique</div>
-<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn primary">🚀 Devenir vendeur</a>
+
+<div class="card">
+Gérez vos produits, suivez vos ventes et développez votre activité avec un tableau de bord simple et puissant.
+</div>
+
+<div class="card">
+✔ Publication rapide
+✔ Suivi des performances
+✔ Boutique personnalisée
+</div>
+
+<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn primary">💰 Devenir vendeur</a>
 </div>
 
 <!-- SERVICES -->
 <div class="section">
-<h2>Pour les services</h2>
-<div class="card">Présentez vos services</div>
-<div class="card">Attirez plus de clients</div>
-<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn secondary">🧰 Proposer mes services</a>
+<h2>Pour les prestataires de services</h2>
+
+<div class="card">
+Présentez vos services et trouvez de nouveaux clients facilement grâce à une visibilité améliorée.
 </div>
 
-<!-- CLIENT -->
+<div class="card">
+✔ Plus de clients
+✔ Plus de visibilité
+✔ Image professionnelle
+</div>
+
+<a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn secondary">🧰 Proposer un service</a>
+</div>
+
+<!-- CLIENTS -->
 <div class="section">
 <h2>Pour les clients</h2>
-<div class="card">Trouvez rapidement des produits</div>
-<div class="card">Découvrez des vendeurs locaux</div>
+
+<div class="card">
+Découvrez des produits et services près de chez vous en toute simplicité.
+</div>
+
+<div class="card">
+✔ Recherche rapide
+✔ Vendeurs locaux
+✔ Achat facile
+</div>
+
 <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn primary">🛒 Acheter maintenant</a>
 </div>
 
-<!-- FINAL CTA -->
-<div class="section">
-<h2>Transformez votre téléphone en source de revenus</h2>
+<!-- CTA FINAL -->
+<div class="cta-box">
+<h2>Rejoignez SHOPNET aujourd’hui</h2>
+<p>
+Transformez votre téléphone en outil de vente et de revenus dès maintenant.
+</p>
 <a href="https://play.google.com/store/apps/details?id=com.shopai.app" class="btn primary">📥 Installer SHOPNET</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2025 - 2026 SHOPNET App
 </div>
 
 </div>
