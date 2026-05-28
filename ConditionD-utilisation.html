@@ -1,0 +1,650 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation (CGU) | SHOPNET</title>
+    <style>
+        /* ===== Global ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* ===== Header avec animation de réduction ===== */
+        header {
+            background: linear-gradient(135deg, #2B3E4F 0%, #1a2836 100%);
+            color: #fff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header.shrink {
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #1a2836 0%, #0f1a24 100%);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: inherit;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== Main Sections ===== */
+        main {
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            position: sticky;
+            top: 80px;
+            background-color: #fff;
+            padding: 0.8rem 1rem;
+            margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+            border-radius: 8px 8px 0 0;
+            z-index: 10;
+            font-size: 1.3rem;
+            color: #2B3E4F;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        section h2.sticky-active {
+            top: 60px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section p,
+        section ul {
+            margin-bottom: 1rem;
+        }
+
+        section ul {
+            padding-left: 1.5rem;
+        }
+
+        section li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            list-style: none;
+        }
+
+        section li:before {
+            content: "•";
+            color: #4CB050;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a {
+            color: #4CB050;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #3a9a3d;
+            text-decoration: underline;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: linear-gradient(135deg, #2B3E4F 0%, #1a2836 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1rem;
+                padding: 1.2rem 0.8rem;
+            }
+
+            header.shrink {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 1.2rem;
+            }
+
+            section h2 {
+                top: 70px;
+                font-size: 1.1rem;
+                padding: 0.6rem 1rem;
+                margin: -1.2rem -1.2rem 1.2rem -1.2rem;
+            }
+
+            section h2.sticky-active {
+                top: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            section h2 {
+                top: 60px;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                margin: -1rem -1rem 1rem -1rem;
+            }
+
+            section h2.sticky-active {
+                top: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Conditions Générales d'Utilisation (CGU) — SHOPNET</h1>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Bienvenue sur SHOPNET, une plateforme numérique de mise en relation permettant aux utilisateurs de publier, acheter, vendre et promouvoir des produits ou services. En accédant à SHOPNET ou en utilisant l'un de ses services, vous acceptez pleinement et sans réserve les présentes Conditions Générales d'Utilisation (CGU).
+            </p>
+            <p>
+                Les présentes CGU ont pour objectif de définir les règles d'utilisation de la plateforme, les droits et obligations des utilisateurs ainsi que les limitations de responsabilité applicables à SHOPNET.
+            </p>
+            <p>
+                Si vous n'acceptez pas ces conditions, vous devez immédiatement cesser d'utiliser la plateforme.
+            </p>
+        </section>
+
+        <!-- 1. Définition de la plateforme -->
+        <section id="definition">
+            <h2>1. Définition de la plateforme</h2>
+            <p>
+                SHOPNET est une plateforme technologique de mise en relation entre vendeurs, prestataires de services et acheteurs. La plateforme permet notamment :
+            </p>
+            <ul>
+                <li>la publication de produits,</li>
+                <li>la publication de services,</li>
+                <li>la création de boutiques,</li>
+                <li>la promotion de contenus,</li>
+                <li>la communication entre utilisateurs,</li>
+                <li>l'accès à des outils commerciaux numériques.</li>
+            </ul>
+            <p>
+                SHOPNET agit uniquement comme intermédiaire technique et ne participe pas directement aux transactions commerciales entre utilisateurs.
+            </p>
+        </section>
+
+        <!-- 2. Acceptation des conditions -->
+        <section id="acceptation">
+            <h2>2. Acceptation des conditions</h2>
+            <p>
+                Toute utilisation de SHOPNET implique l'acceptation intégrale des présentes Conditions Générales d'Utilisation ainsi que des politiques associées.
+            </p>
+            <p>
+                L'utilisateur reconnaît avoir lu, compris et accepté les présentes conditions avant toute utilisation de la plateforme.
+            </p>
+        </section>
+
+        <!-- 3. Création de compte -->
+        <section id="creation-compte">
+            <h2>3. Création de compte</h2>
+            <p>
+                La création d'un compte utilisateur est obligatoire pour accéder à certaines fonctionnalités de SHOPNET.
+            </p>
+            <p>L'utilisateur s'engage à :</p>
+            <ul>
+                <li>fournir des informations exactes,</li>
+                <li>maintenir ses informations à jour,</li>
+                <li>protéger ses identifiants de connexion,</li>
+                <li>ne pas usurper l'identité d'un tiers,</li>
+                <li>ne pas créer plusieurs comptes frauduleux.</li>
+            </ul>
+            <p>SHOPNET se réserve le droit :</p>
+            <ul>
+                <li>de vérifier certaines informations,</li>
+                <li>de suspendre un compte,</li>
+                <li>de refuser un compte,</li>
+                <li>de supprimer un compte frauduleux,</li>
+            </ul>
+            <p>sans préavis.</p>
+        </section>
+
+        <!-- 4. Âge minimum et responsabilité des mineurs -->
+        <section id="age">
+            <h2>4. Âge minimum et responsabilité des mineurs</h2>
+            <p>L'accès à SHOPNET est réservé :</p>
+            <ul>
+                <li>aux utilisateurs âgés de 13 ans minimum pour l'utilisation générale,</li>
+                <li>aux utilisateurs âgés de 18 ans minimum pour les activités commerciales autonomes.</li>
+            </ul>
+            <p>
+                Les utilisateurs âgés de 13 à 17 ans doivent obligatoirement utiliser la plateforme sous la supervision et avec l'autorisation d'un parent ou tuteur légal.
+            </p>
+            <p>
+                Les vendeurs mineurs restent sous la responsabilité complète de leurs représentants légaux.
+            </p>
+            <p>SHOPNET ne peut être tenue responsable :</p>
+            <ul>
+                <li>des fausses déclarations d'âge,</li>
+                <li>des fraudes liées à l'identité,</li>
+                <li>des activités réalisées par des mineurs.</li>
+            </ul>
+        </section>
+
+        <!-- 5. Obligations des utilisateurs -->
+        <section id="obligations">
+            <h2>5. Obligations des utilisateurs</h2>
+            <p>Chaque utilisateur s'engage à :</p>
+            <ul>
+                <li>respecter les lois applicables,</li>
+                <li>respecter les autres utilisateurs,</li>
+                <li>ne pas utiliser la plateforme à des fins illégales,</li>
+                <li>ne pas publier de contenus trompeurs,</li>
+                <li>ne pas publier de contenus offensants ou haineux,</li>
+                <li>ne pas perturber le fonctionnement technique de SHOPNET,</li>
+                <li>ne pas tenter d'accéder illégalement aux systèmes.</li>
+            </ul>
+            <p>
+                Les utilisateurs sont entièrement responsables de leurs contenus, publications, messages et activités.
+            </p>
+        </section>
+
+        <!-- 6. Produits et services interdits -->
+        <section id="produits-interdits">
+            <h2>6. Produits et services interdits</h2>
+            <p>Il est strictement interdit de publier, promouvoir, vendre ou distribuer :</p>
+            <ul>
+                <li>drogues et substances illégales,</li>
+                <li>armes et explosifs,</li>
+                <li>produits contrefaits,</li>
+                <li>contenus piratés,</li>
+                <li>produits dangereux,</li>
+                <li>produits illégaux,</li>
+                <li>contenus frauduleux,</li>
+                <li>faux documents,</li>
+                <li>contenus portant atteinte aux droits d'auteur,</li>
+                <li>produits interdits par les lois applicables.</li>
+            </ul>
+            <p>
+                SHOPNET se réserve le droit de supprimer immédiatement tout contenu suspect ou interdit.
+            </p>
+        </section>
+
+        <!-- 7. Transactions entre utilisateurs -->
+        <section id="transactions">
+            <h2>7. Transactions entre utilisateurs</h2>
+            <p>
+                SHOPNET agit uniquement comme plateforme de mise en relation.
+            </p>
+            <p>Les utilisateurs sont seuls responsables :</p>
+            <ul>
+                <li>des négociations,</li>
+                <li>des paiements,</li>
+                <li>des livraisons,</li>
+                <li>des accords commerciaux,</li>
+                <li>des vérifications des produits,</li>
+                <li>des risques liés aux transactions.</li>
+            </ul>
+            <p>SHOPNET ne garantit :</p>
+            <ul>
+                <li>ni la qualité des produits,</li>
+                <li>ni la légalité des offres,</li>
+                <li>ni la solvabilité des utilisateurs,</li>
+                <li>ni la réussite des transactions.</li>
+            </ul>
+            <p>
+                Toutes les transactions sont effectuées sous la responsabilité exclusive des utilisateurs.
+            </p>
+        </section>
+
+        <!-- 8. Paiements internes SHOPNET -->
+        <section id="paiements">
+            <h2>8. Paiements internes SHOPNET</h2>
+            <p>SHOPNET peut proposer certains services payants internes, notamment :</p>
+            <ul>
+                <li>le boost de produits,</li>
+                <li>les boutiques Premium,</li>
+                <li>certains services promotionnels.</li>
+            </ul>
+            <p>
+                Ces paiements peuvent être traités manuellement ou via des systèmes partenaires.
+            </p>
+            <p>SHOPNET se réserve le droit :</p>
+            <ul>
+                <li>de refuser une demande,</li>
+                <li>de suspendre un service,</li>
+                <li>de modifier les prix,</li>
+                <li>de limiter certaines fonctionnalités.</li>
+            </ul>
+            <p>
+                Les frais déjà consommés ou utilisés ne sont pas remboursables sauf disposition contraire imposée par la loi.
+            </p>
+        </section>
+
+        <!-- 9. Livraison et logistique -->
+        <section id="livraison">
+            <h2>9. Livraison et logistique</h2>
+            <p>
+                SHOPNET ne dispose pas nécessairement d'un système de livraison intégré.
+            </p>
+            <p>
+                Les livraisons sont organisées directement entre utilisateurs.
+            </p>
+            <p>SHOPNET décline toute responsabilité concernant :</p>
+            <ul>
+                <li>les pertes,</li>
+                <li>les retards,</li>
+                <li>les dommages,</li>
+                <li>les vols,</li>
+                <li>les litiges de livraison.</li>
+            </ul>
+        </section>
+
+        <!-- 10. Litiges entre utilisateurs -->
+        <section id="litiges">
+            <h2>10. Litiges entre utilisateurs</h2>
+            <p>En cas de litige entre utilisateurs :</p>
+            <ul>
+                <li>SHOPNET peut proposer une médiation facultative,</li>
+                <li>SHOPNET n'est pas partie au contrat entre utilisateurs,</li>
+                <li>SHOPNET ne garantit aucune résolution.</li>
+            </ul>
+            <p>
+                Les utilisateurs reconnaissent que SHOPNET n'est pas responsable des conséquences financières ou commerciales liées aux litiges.
+            </p>
+        </section>
+
+        <!-- 11. Suspension et suppression de compte -->
+        <section id="suspension">
+            <h2>11. Suspension et suppression de compte</h2>
+            <p>SHOPNET peut suspendre, limiter ou supprimer un compte à tout moment en cas :</p>
+            <ul>
+                <li>de fraude,</li>
+                <li>d'arnaque,</li>
+                <li>de comportement dangereux,</li>
+                <li>de violation des CGU,</li>
+                <li>d'atteinte à la sécurité,</li>
+                <li>de non-respect des lois,</li>
+                <li>d'activité suspecte.</li>
+            </ul>
+            <p>
+                Cette mesure peut être appliquée avec ou sans préavis.
+            </p>
+            <p>SHOPNET peut également supprimer :</p>
+            <ul>
+                <li>des produits,</li>
+                <li>des boutiques,</li>
+                <li>des messages,</li>
+                <li>des contenus,</li>
+                <li>des commentaires,</li>
+            </ul>
+            <p>sans obligation de justification publique.</p>
+        </section>
+
+        <!-- 12. Sécurité et protection des systèmes -->
+        <section id="securite">
+            <h2>12. Sécurité et protection des systèmes</h2>
+            <p>SHOPNET met en œuvre des mesures techniques raisonnables pour protéger :</p>
+            <ul>
+                <li>les données,</li>
+                <li>les comptes,</li>
+                <li>les serveurs,</li>
+                <li>les communications.</li>
+            </ul>
+            <p>
+                Toutefois, aucun système informatique n'est totalement sécurisé.
+            </p>
+            <p>SHOPNET ne garantit pas :</p>
+            <ul>
+                <li>l'absence totale de faille,</li>
+                <li>l'absence de piratage,</li>
+                <li>l'absence d'interruption.</li>
+            </ul>
+            <p>
+                L'utilisateur reconnaît utiliser la plateforme à ses propres risques.
+            </p>
+        </section>
+
+        <!-- 13. Disponibilité des services -->
+        <section id="disponibilite">
+            <h2>13. Disponibilité des services</h2>
+            <p>SHOPNET peut interrompre temporairement ou définitivement certains services pour :</p>
+            <ul>
+                <li>maintenance,</li>
+                <li>mise à jour,</li>
+                <li>sécurité,</li>
+                <li>évolution technique,</li>
+                <li>raisons commerciales.</li>
+            </ul>
+            <p>
+                SHOPNET ne garantit pas une disponibilité permanente de la plateforme.
+            </p>
+        </section>
+
+        <!-- 14. Données et contenus utilisateurs -->
+        <section id="donnees">
+            <h2>14. Données et contenus utilisateurs</h2>
+            <p>
+                Les utilisateurs conservent la propriété de leurs contenus publiés.
+            </p>
+            <p>
+                Toutefois, en publiant sur SHOPNET, l'utilisateur accorde à SHOPNET une licence non exclusive permettant :
+            </p>
+            <ul>
+                <li>l'affichage,</li>
+                <li>la diffusion,</li>
+                <li>la promotion,</li>
+                <li>l'optimisation technique des contenus.</li>
+            </ul>
+            <p>
+                SHOPNET peut utiliser certains contenus dans le cadre de la promotion de la plateforme.
+            </p>
+        </section>
+
+        <!-- 15. Propriété intellectuelle -->
+        <section id="propriete-intellectuelle">
+            <h2>15. Propriété intellectuelle</h2>
+            <p>Tous les éléments appartenant à SHOPNET sont protégés :</p>
+            <ul>
+                <li>logo,</li>
+                <li>design,</li>
+                <li>structure,</li>
+                <li>technologie,</li>
+                <li>base de données,</li>
+                <li>contenus,</li>
+                <li>marques.</li>
+            </ul>
+            <p>
+                Toute reproduction non autorisée est interdite.
+            </p>
+        </section>
+
+        <!-- 16. Limitation de responsabilité -->
+        <section id="limitation-responsabilite">
+            <h2>16. Limitation de responsabilité</h2>
+            <p>
+                Dans les limites autorisées par la loi, SHOPNET ne peut être tenue responsable :
+            </p>
+            <ul>
+                <li>des pertes financières,</li>
+                <li>des pertes de données,</li>
+                <li>des interruptions de service,</li>
+                <li>des litiges utilisateurs,</li>
+                <li>des contenus publiés,</li>
+                <li>des activités frauduleuses,</li>
+                <li>des dommages indirects,</li>
+                <li>des erreurs techniques,</li>
+                <li>des décisions prises par les utilisateurs.</li>
+            </ul>
+            <p>
+                L'utilisateur reconnaît utiliser la plateforme sous sa propre responsabilité.
+            </p>
+        </section>
+
+        <!-- 17. Évolution future des services -->
+        <section id="evolution">
+            <h2>17. Évolution future des services</h2>
+            <p>
+                SHOPNET se réserve le droit d'ajouter, modifier ou supprimer des fonctionnalités à tout moment, notamment :
+            </p>
+            <ul>
+                <li>systèmes de paiement,</li>
+                <li>outils intelligents,</li>
+                <li>systèmes de sécurité,</li>
+                <li>recommandations automatisées,</li>
+                <li>services Premium,</li>
+                <li>systèmes logistiques.</li>
+            </ul>
+        </section>
+
+        <!-- 18. Modifications des CGU -->
+        <section id="modifications">
+            <h2>18. Modifications des CGU</h2>
+            <p>
+                SHOPNET peut modifier les présentes Conditions Générales d'Utilisation à tout moment.
+            </p>
+            <p>Les modifications peuvent être communiquées :</p>
+            <ul>
+                <li>par notification,</li>
+                <li>par email,</li>
+                <li>directement sur la plateforme.</li>
+            </ul>
+            <p>
+                La poursuite de l'utilisation de SHOPNET après modification implique l'acceptation des nouvelles conditions.
+            </p>
+        </section>
+
+        <!-- 19. Loi applicable et juridiction -->
+        <section id="loi-applicable">
+            <h2>19. Loi applicable et juridiction</h2>
+            <p>
+                Les présentes CGU sont régies par les lois applicables dans le pays d'enregistrement officiel de SHOPNET.
+            </p>
+            <p>
+                Tout litige relatif à l'utilisation de la plateforme relève de la compétence des juridictions compétentes du pays d'enregistrement de SHOPNET.
+            </p>
+        </section>
+
+        <!-- 20. Contact légal -->
+        <section id="contact">
+            <h2>20. Contact légal</h2>
+            <p>Pour toute question juridique, signalement ou demande officielle :</p>
+            <ul>
+                <li>Email : <a href="mailto:tegramatondo001gmail.com">legal@shopnet.com</a></li>
+                <li>Support : <a href="mailto:support.shopnet@gmail.com">support@shopnet.com</a></li>
+                <li>Adresse : Lubumbashi, République Démocratique du Congo</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                En utilisant SHOPNET, l'utilisateur reconnaît avoir lu, compris et accepté l'intégralité des présentes Conditions Générales d'Utilisation.
+            </p>
+            <p>
+                SHOPNET poursuit continuellement le développement d'un environnement commercial moderne, sécurisé et évolutif destiné aux vendeurs, acheteurs et prestataires de services.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SHOPNET. Tous droits réservés. | Dernière mise à jour : 28 mai 2026</p>
+    </footer>
+
+    <script>
+        // Animation de réduction du header au scroll
+        const header = document.getElementById('main-header');
+        const sectionTitles = document.querySelectorAll('section h2');
+        
+        window.addEventListener('scroll', function() {
+            // Réduction du header
+            if (window.scrollY > 50) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+            
+            // Ajustement des titres de section sticky
+            sectionTitles.forEach(function(title) {
+                if (header.classList.contains('shrink')) {
+                    title.classList.add('sticky-active');
+                } else {
+                    title.classList.remove('sticky-active');
+                }
+            });
+        });
+
+        // Défilement fluide pour les ancres (si utilisé)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,600 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales de Vente (CGV) — Vendeurs SHOPNET</title>
+    <style>
+        /* ===== Global ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* ===== Header avec animation de réduction ===== */
+        header {
+            background: linear-gradient(135deg, #2B3E4F 0%, #1a2836 100%);
+            color: #fff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header.shrink {
+            padding: 0.6rem 1rem;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #1a2836 0%, #0f1a24 100%);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: inherit;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== Main Sections ===== */
+        main {
+            padding: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            position: sticky;
+            top: 80px;
+            background-color: #fff;
+            padding: 0.8rem 1rem;
+            margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+            border-radius: 8px 8px 0 0;
+            z-index: 10;
+            font-size: 1.3rem;
+            color: #2B3E4F;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        section h2.sticky-active {
+            top: 60px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section p,
+        section ul {
+            margin-bottom: 1rem;
+        }
+
+        section ul {
+            padding-left: 1.5rem;
+        }
+
+        section li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            list-style: none;
+        }
+
+        section li:before {
+            content: "•";
+            color: #4CB050;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        a {
+            color: #4CB050;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #3a9a3d;
+            text-decoration: underline;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: linear-gradient(135deg, #2B3E4F 0%, #1a2836 100%);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            header {
+                font-size: 1rem;
+                padding: 1.2rem 0.8rem;
+            }
+
+            header.shrink {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            section {
+                padding: 1.2rem;
+            }
+
+            section h2 {
+                top: 70px;
+                font-size: 1.1rem;
+                padding: 0.6rem 1rem;
+                margin: -1.2rem -1.2rem 1.2rem -1.2rem;
+            }
+
+            section h2.sticky-active {
+                top: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            section h2 {
+                top: 60px;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                margin: -1rem -1rem 1rem -1rem;
+            }
+
+            section h2.sticky-active {
+                top: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Conditions Générales de Vente (CGV) — Vendeurs SHOPNET</h1>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Les présentes Conditions Générales de Vente (CGV) définissent les règles applicables à tous les vendeurs utilisant la plateforme SHOPNET pour publier, promouvoir et vendre des produits ou services.
+            </p>
+            <p>
+                En publiant un produit, un service ou une offre commerciale sur SHOPNET, le vendeur accepte pleinement les présentes conditions.
+            </p>
+            <p>
+                SHOPNET agit exclusivement comme plateforme de mise en relation entre vendeurs, acheteurs et prestataires de services. SHOPNET n'est ni propriétaire des produits vendus, ni revendeur officiel, ni partie directe aux transactions réalisées entre utilisateurs.
+            </p>
+        </section>
+
+        <!-- 1. Statut du vendeur -->
+        <section id="statut-vendeur">
+            <h2>1. Statut du vendeur</h2>
+            <p>Le vendeur est seul responsable :</p>
+            <ul>
+                <li>des produits ou services publiés,</li>
+                <li>des informations fournies,</li>
+                <li>des prix affichés,</li>
+                <li>des échanges avec les acheteurs,</li>
+                <li>des livraisons,</li>
+                <li>des garanties proposées,</li>
+                <li>du respect des lois applicables.</li>
+            </ul>
+            <p>
+                Le vendeur reconnaît exercer son activité sous sa propre responsabilité.
+            </p>
+        </section>
+
+        <!-- 2. Conditions pour vendre sur SHOPNET -->
+        <section id="conditions-vente">
+            <h2>2. Conditions pour vendre sur SHOPNET</h2>
+            <p>Pour vendre sur SHOPNET, le vendeur doit :</p>
+            <ul>
+                <li>disposer d'un compte valide,</li>
+                <li>fournir des informations exactes,</li>
+                <li>respecter les lois en vigueur,</li>
+                <li>respecter les présentes CGV et les CGU de SHOPNET.</li>
+            </ul>
+            <p>
+                Les vendeurs mineurs de 15 à 17 ans doivent obligatoirement être encadrés par un parent ou tuteur légal.
+            </p>
+            <p>
+                La vente autonome est réservée aux personnes âgées de 18 ans et plus.
+            </p>
+        </section>
+
+        <!-- 3. Publication des produits et services -->
+        <section id="publication">
+            <h2>3. Publication des produits et services</h2>
+            <p>Le vendeur s'engage à publier uniquement des contenus :</p>
+            <ul>
+                <li>exacts,</li>
+                <li>honnêtes,</li>
+                <li>complets,</li>
+                <li>légaux,</li>
+                <li>non trompeurs.</li>
+            </ul>
+            <p>Les publications doivent notamment inclure :</p>
+            <ul>
+                <li>le nom du produit ou service,</li>
+                <li>une description réaliste,</li>
+                <li>des images conformes,</li>
+                <li>un prix clair,</li>
+                <li>des informations utiles à l'acheteur.</li>
+            </ul>
+            <p>Il est interdit de publier :</p>
+            <ul>
+                <li>de faux produits,</li>
+                <li>des contenus trompeurs,</li>
+                <li>des images volées,</li>
+                <li>des informations mensongères.</li>
+            </ul>
+            <p>
+                SHOPNET se réserve le droit de supprimer toute publication non conforme.
+            </p>
+        </section>
+
+        <!-- 4. Produits interdits -->
+        <section id="produits-interdits">
+            <h2>4. Produits interdits</h2>
+            <p>Les vendeurs ne peuvent pas publier ou vendre :</p>
+            <ul>
+                <li>drogues,</li>
+                <li>armes,</li>
+                <li>explosifs,</li>
+                <li>produits contrefaits,</li>
+                <li>contenus piratés,</li>
+                <li>produits illégaux,</li>
+                <li>faux documents,</li>
+                <li>produits dangereux,</li>
+                <li>produits violant les droits d'auteur,</li>
+                <li>toute catégorie interdite par la loi.</li>
+            </ul>
+            <p>
+                Le vendeur assume l'entière responsabilité des produits publiés.
+            </p>
+        </section>
+
+        <!-- 5. Prix et responsabilité commerciale -->
+        <section id="prix">
+            <h2>5. Prix et responsabilité commerciale</h2>
+            <p>
+                Le vendeur fixe librement ses prix.
+            </p>
+            <p>Le vendeur est responsable :</p>
+            <ul>
+                <li>des erreurs de prix,</li>
+                <li>des promotions,</li>
+                <li>des négociations,</li>
+                <li>des taxes éventuelles,</li>
+                <li>des obligations commerciales liées à son activité.</li>
+            </ul>
+            <p>
+                SHOPNET ne contrôle pas les prix pratiqués par les vendeurs.
+            </p>
+        </section>
+
+        <!-- 6. Transactions entre vendeurs et acheteurs -->
+        <section id="transactions">
+            <h2>6. Transactions entre vendeurs et acheteurs</h2>
+            <p>
+                Les transactions sont réalisées directement entre utilisateurs.
+            </p>
+            <p>SHOPNET n'intervient pas directement dans :</p>
+            <ul>
+                <li>les paiements,</li>
+                <li>les accords commerciaux,</li>
+                <li>les négociations,</li>
+                <li>les remises de produits.</li>
+            </ul>
+            <p>Le vendeur reconnaît que :</p>
+            <ul>
+                <li>les ventes sont réalisées sous sa responsabilité,</li>
+                <li>SHOPNET ne garantit aucune vente,</li>
+                <li>SHOPNET ne garantit pas le comportement des acheteurs.</li>
+            </ul>
+        </section>
+
+        <!-- 7. Paiements -->
+        <section id="paiements">
+            <h2>7. Paiements</h2>
+            <p>
+                Actuellement, les paiements entre vendeurs et acheteurs sont organisés directement entre les parties.
+            </p>
+            <p>Les vendeurs peuvent utiliser :</p>
+            <ul>
+                <li>paiements en espèces,</li>
+                <li>Mobile Money,</li>
+                <li>transferts,</li>
+                <li>ou autres moyens convenus avec l'acheteur.</li>
+            </ul>
+            <p>SHOPNET ne garantit pas :</p>
+            <ul>
+                <li>la sécurité des paiements externes,</li>
+                <li>la solvabilité des acheteurs,</li>
+                <li>l'absence de fraude.</li>
+            </ul>
+            <p>
+                Le vendeur est responsable de vérifier les paiements avant toute livraison.
+            </p>
+        </section>
+
+        <!-- 8. Livraison des produits -->
+        <section id="livraison">
+            <h2>8. Livraison des produits</h2>
+            <p>Le vendeur est responsable :</p>
+            <ul>
+                <li>de l'expédition,</li>
+                <li>de la remise du produit,</li>
+                <li>des délais,</li>
+                <li>de l'état du produit livré.</li>
+            </ul>
+            <p>Le vendeur s'engage à :</p>
+            <ul>
+                <li>fournir un produit conforme à la description,</li>
+                <li>respecter les conditions convenues,</li>
+                <li>communiquer clairement avec l'acheteur.</li>
+            </ul>
+            <p>
+                SHOPNET ne gère actuellement aucun système logistique intégré.
+            </p>
+        </section>
+
+        <!-- 9. Litiges et réclamations -->
+        <section id="litiges">
+            <h2>9. Litiges et réclamations</h2>
+            <p>
+                En cas de litige avec un acheteur, le vendeur s'engage à rechercher une solution amiable.
+            </p>
+            <p>
+                SHOPNET peut proposer une médiation facultative mais ne garantit aucune résolution.
+            </p>
+            <p>Le vendeur reconnaît que SHOPNET n'est pas responsable :</p>
+            <ul>
+                <li>des pertes financières,</li>
+                <li>des arnaques,</li>
+                <li>des retards,</li>
+                <li>des conflits commerciaux,</li>
+                <li>des problèmes de livraison.</li>
+            </ul>
+        </section>
+
+        <!-- 10. Comportements interdits -->
+        <section id="comportements-interdits">
+            <h2>10. Comportements interdits</h2>
+            <p>Le vendeur s'interdit notamment :</p>
+            <ul>
+                <li>toute fraude,</li>
+                <li>toute arnaque,</li>
+                <li>toute manipulation des prix,</li>
+                <li>les faux avis,</li>
+                <li>le spam,</li>
+                <li>les menaces,</li>
+                <li>le harcèlement,</li>
+                <li>l'usurpation d'identité,</li>
+                <li>la publication abusive.</li>
+            </ul>
+            <p>Tout comportement dangereux peut entraîner :</p>
+            <ul>
+                <li>suspension du compte,</li>
+                <li>suppression des produits,</li>
+                <li>suppression définitive du compte.</li>
+            </ul>
+        </section>
+
+        <!-- 11. Suspension ou suppression du compte vendeur -->
+        <section id="suspension">
+            <h2>11. Suspension ou suppression du compte vendeur</h2>
+            <p>SHOPNET peut suspendre ou supprimer un compte vendeur en cas :</p>
+            <ul>
+                <li>de fraude,</li>
+                <li>de violation des règles,</li>
+                <li>de produits interdits,</li>
+                <li>de plaintes répétées,</li>
+                <li>de comportement dangereux,</li>
+                <li>de fausse identité,</li>
+                <li>d'activité suspecte.</li>
+            </ul>
+            <p>
+                Cette mesure peut être appliquée avec ou sans préavis.
+            </p>
+        </section>
+
+        <!-- 12. Limitation de responsabilité de SHOPNET -->
+        <section id="limitation-responsabilite">
+            <h2>12. Limitation de responsabilité de SHOPNET</h2>
+            <p>
+                SHOPNET agit uniquement comme plateforme numérique de mise en relation.
+            </p>
+            <p>SHOPNET ne garantit pas :</p>
+            <ul>
+                <li>le volume des ventes,</li>
+                <li>les revenus,</li>
+                <li>la visibilité permanente,</li>
+                <li>la réussite commerciale,</li>
+                <li>le comportement des acheteurs.</li>
+            </ul>
+            <p>SHOPNET ne peut être tenue responsable :</p>
+            <ul>
+                <li>des pertes financières,</li>
+                <li>des litiges,</li>
+                <li>des arnaques,</li>
+                <li>des dommages,</li>
+                <li>des interruptions techniques,</li>
+                <li>des pertes commerciales.</li>
+            </ul>
+            <p>
+                Le vendeur utilise la plateforme sous sa propre responsabilité.
+            </p>
+        </section>
+
+        <!-- 13. Propriété intellectuelle -->
+        <section id="propriete-intellectuelle">
+            <h2>13. Propriété intellectuelle</h2>
+            <p>
+                Le vendeur garantit disposer des droits nécessaires sur les contenus publiés.
+            </p>
+            <p>Le vendeur reste propriétaire de ses contenus mais autorise SHOPNET à :</p>
+            <ul>
+                <li>afficher,</li>
+                <li>diffuser,</li>
+                <li>promouvoir,</li>
+                <li>optimiser techniquement les publications sur la plateforme.</li>
+            </ul>
+        </section>
+
+        <!-- 14. Évolution future des services -->
+        <section id="evolution">
+            <h2>14. Évolution future des services</h2>
+            <p>SHOPNET prévoit d'intégrer progressivement :</p>
+            <ul>
+                <li>systèmes de paiement sécurisés,</li>
+                <li>outils de livraison,</li>
+                <li>systèmes intelligents,</li>
+                <li>publicité avancée,</li>
+                <li>outils professionnels pour vendeurs.</li>
+            </ul>
+            <p>
+                Ces évolutions pourront modifier certaines conditions actuelles.
+            </p>
+        </section>
+
+        <!-- 15. Modification des conditions -->
+        <section id="modifications">
+            <h2>15. Modification des conditions</h2>
+            <p>
+                SHOPNET se réserve le droit de modifier les présentes Conditions Générales de Vente à tout moment.
+            </p>
+            <p>Les vendeurs seront informés des mises à jour importantes via :</p>
+            <ul>
+                <li>notifications,</li>
+                <li>email,</li>
+                <li>publication sur la plateforme.</li>
+            </ul>
+            <p>
+                La poursuite de l'utilisation de SHOPNET après modification implique l'acceptation des nouvelles conditions.
+            </p>
+        </section>
+
+        <!-- 16. Loi applicable -->
+        <section id="loi-applicable">
+            <h2>16. Loi applicable</h2>
+            <p>
+                Les présentes Conditions Générales de Vente sont régies par les lois applicables dans le pays d'enregistrement officiel de SHOPNET.
+            </p>
+            <p>
+                Tout litige relatif à l'utilisation de la plateforme relève des juridictions compétentes du pays d'enregistrement de SHOPNET.
+            </p>
+        </section>
+
+        <!-- 17. Contact -->
+        <section id="contact">
+            <h2>17. Contact</h2>
+            <p>Pour toute question concernant les ventes ou activités commerciales :</p>
+            <ul>
+                <li>Email : <a href="mailto:legal@shopnet.com">legal@shopnet.com</a></li>
+                <li>Support : <a href="mailto:support@shopnet.com">support@shopnet.com</a></li>
+                <li>Adresse : Lubumbashi, République Démocratique du Congo</li>
+            </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                En publiant ou vendant un produit ou service sur SHOPNET, le vendeur reconnaît avoir lu, compris et accepté l'intégralité des présentes Conditions Générales de Vente.
+            </p>
+            <p>
+                SHOPNET poursuit le développement d'un environnement commercial moderne, accessible et évolutif destiné aux vendeurs, entrepreneurs et prestataires de services.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 SHOPNET. Tous droits réservés. | Dernière mise à jour : 28 mai 2026</p>
+    </footer>
+
+    <script>
+        // Animation de réduction du header au scroll
+        const header = document.getElementById('main-header');
+        const sectionTitles = document.querySelectorAll('section h2');
+        
+        window.addEventListener('scroll', function() {
+            // Réduction du header
+            if (window.scrollY > 50) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+            
+            // Ajustement des titres de section sticky
+            sectionTitles.forEach(function(title) {
+                if (header.classList.contains('shrink')) {
+                    title.classList.add('sticky-active');
+                } else {
+                    title.classList.remove('sticky-active');
+                }
+            });
+        });
+
+        // Défilement fluide pour les ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
